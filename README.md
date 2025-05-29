@@ -33,14 +33,31 @@ A simple and powerful To-Do List API built with **Node.js**, **Express**, and **
    ```bash
    git clone https://github.com/YasserAmro0/to_do_app.git
    cd to_do_app
-
+   ```
+  ## Install dependencies
    npm install
+
    Add a .env file
    PORT=8080
   DB_URL=mongodb+srv://<username>:<password>@cluster0.mongodb.net/todo_db?retryWrites=true&w=majority
 
-  **Run App **
+
+
+  ## Run App 
   npm run dev
+
+## 🧪 API Endpoints
+| Method | Endpoint                       | Description            |
+| ------ | ------------------------------ | ---------------------- |
+| GET    | `/tasks`                       | Get all tasks          |
+| POST   | `/tasks`                       | Add a new task         |
+| PUT    | `/tasks/:id`                   | Update a task          |
+| PATCH  | `/tasks/:id/toggle-completion` | Toggle task completion |
+| DELETE | `/tasks/:id`                   | Delete a task          |
+
+
+
+   
 
 
 
